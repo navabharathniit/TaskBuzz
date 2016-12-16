@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app="taskbuzz" ng-init="register=true;login=true;viewMyTasks=false;logout=false;uname='data'">
+
+<head>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  
+ 
+<!-- <title>Bootstrap Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/mainhome.js"></script>
+  
+  <style>
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGviJfQ_hqp7-Wtp3vZr8f5s-Ogye_6Jzc-5MHYMZ-KlOzcDMT");
+    width:100%
+    } 
+   
+</style> 
+</head>
+
+<body>
+<br></br>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"><b><i>TaskBuzz</i></b></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="#register" ng-show="register"><i class="fa fa-user"></i><em> Register</em></a></li> 
+        <li><a href="#login" ng-show="login"><i class="fa fa-lock"></i><em> Login</em></a></li> 
+        <li><a href="#viewMyTasks" ng-show="viewMyTasks"><i class="fa fa-list"></i><em>Task Hub</em></a></li>
+        <li><a href="#logout" ng-show="logout"><i class="fa fa-shield"></i><em> Log out </em></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div ng-view></div>
+</body>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<center>
+<i class="glyphicon glyphicon-cloud" style="font-size:50px;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:100px;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:180px;color:red;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:250px;color:lightblue;"></i></center>
+</center>
